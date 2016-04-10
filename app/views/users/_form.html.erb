@@ -1,0 +1,57 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_area :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_area :password %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_area :image %>
+  </div>
+  <div class="field">
+    <%= f.label :friendslist %><br>
+    <%= f.text_area :friendslist %>
+  </div>
+  <div class="field">
+    <%= f.label :radius %><br>
+    <%= f.number_field :radius %>
+  </div>
+  <div class="field">
+    <%= f.label :interests %><br>
+    <%= f.text_area :interests %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :eventhistory %><br>
+    <%= f.text_area :eventhistory %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

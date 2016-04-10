@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyText
+  username: MyText
+  password: MyText
+  image: MyText
+  friendslist: MyText
+  radius: 1
+  interests: MyText
+  latitude: 9.99
+  longitude: 9.99
+  eventhistory: MyText
+
+two:
+  email: MyText
+  username: MyText
+  password: MyText
+  image: MyText
+  friendslist: MyText
+  radius: 1
+  interests: MyText
+  latitude: 9.99
+  longitude: 9.99
+  eventhistory: MyText
